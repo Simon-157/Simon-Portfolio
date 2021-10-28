@@ -1,0 +1,7 @@
+.about:hover {width: 100%;
+    transition:  5s;
+    transition-timing-function: line;}
+    .nav:hover { position: relative;   
+        transition:  2s;
+        transition-timing-function: steps(8);}
+        
