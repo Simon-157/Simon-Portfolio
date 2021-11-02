@@ -8,53 +8,73 @@
     <link rel="stylesheet" href="static/personal.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/dash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="static/empty.css"> -->
 </head>
 <body>
     
-    <div class="nav"><br>
+    <div class="nav " ><br>
         <h2 style="color:antiquewhite;font-size: 32px;">Simon Boateng</h2>
-        <ul>
+        <ul id="med-nav scrollFade">
             <li><a class="navlink" href="#H" >HOME</a></li>
             <li><a class="navlink" href="#A">ABOUT</a></li>
             <li><a class="navlink" href="#P">PROJECTS</a></li>
             <li><a class="navlink" href="#C">CONTACT</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            
         </ul>
+        
     </div>
     <header><br>WELCOME TO MY PERSONAL SITE<br></header>
-    <div id="#H" >
-        <section class="home"  >
-        <h1 style="padding-block: 5cm;padding-left: 3cm;">This site is a layout of my portfolio. <br> It covers my personal skills and the tools <br>I use in designing softwares.<br>Hit me up for more information about me <br>and hook for your projects </h1>
-        </section>
+    <div id="H" class="home">
+        <div class="home-content">
+            <div  class="home-txt"> 
+                <button type="button" class="A-btn">
+                    <a href="#A">ABOUT ME</a>
+                </button>
+            </div>
+            <div class="home-txt ">
+                <h1 style="padding-left: 3cm;">This site is a layout of my portfolio. 
+                    <br> It covers my personal skills and the tools <br>I use in designing softwares.
+                    <br>Hit me up for more information about me <br>and hook for your projects 
+                    
+                </h1>
+            </div>
+        </div>
+        
     </div>
     
-    <div class="about" id="A">       
+    <div class="about scrollFade" id="A">       
         <div class="txt">
                 <h3 ><br><br><b>ABOUT ME</b></h3>
-                <p>I am currently a computer science student at Ashesi University.
-                I aims at becoming a software engineer who will create different
-                softwares to help solve some sophisticated human challenges.
+                <p>My enthusiasm for technology includes both the working 
+                technology itself and the use to which it can be put in the modern world.
+                I am currently a computer science student at Ashesi University.
+                As a software engineering aspirant, I always aim at improving 
+                my problem solving skills to be able apply my critical thinking ability to creating different
+                softwares that will help solve some sophisticated human challenges.
                 Being a computer science student, I do take courses relating to 
                 web development, data science and other
                 related courses that will help me develope my technical skills as 
                 an aspirant software engineer. Hit me up for your projects⭐💻💻</p>
         </div>
         <div class="pic">
-            <img class="my-pic" src="static/images/simonjnr.jpg" alt="pic">
+            <img class="my-pic scrollFade" src="static/images/simonjnr.jpg" alt="pic">
         </div>
     </div>
     
-    <section class="sectionP container" id="P">
+    <section class="sectionP container scrollFade" id="P">
         <!-- <div class="container"> -->
             <h2 style="text-align: center;font-size: 32px;"><br><br>MY PROJECTS</h2>
 
             <div class="project-sec" >
                
                 <div class="project"  >
-                    <img class="projectimg" src="static/images/weather.png">
+                    <a href="https://weatherworldapp-simon.herokuapp.com"><img class="projectimg" src="static/images/weather.png"></a>
                     <div class="project-des">
                         <h3>WEATHER TEMPERATURE CHECKER</h3>
                         <P>This a web that displays the weather condition at a uers's specified location</P>
@@ -62,8 +82,8 @@
                         <a href="https://github.com/Simon-157/weatherworld-app">GITHUB SOURCE CODE</a>
                     </div>
                 </div>
-                <div class="project ">
-                    <img class="projectimg" src="https://img.icons8.com/external-wanicon-flat-wanicon/64/000000/external-calculator-education-wanicon-flat-wanicon.png"/>
+                <div class="project">
+                    <a href="https://simon-interest-app.herokuapp.com"><img class="projectimg" src="https://img.icons8.com/external-wanicon-flat-wanicon/64/000000/external-calculator-education-wanicon-flat-wanicon.png"/></a>
                     <div class="project-des">
                         <h3>INTERSET CALCULATOR</h3>
                         <P>This a  program that allows users to search for the current weather temperature at the present location</P>
@@ -72,7 +92,7 @@
                         
                     </div>
                 </div>
-                <div class="project "  >
+                <div class="project"  >
                     <img class="projectimg" src="static/images/gues.png">
                     <div class="project-des">
                         <h3>GUESSING GAME</h3>
@@ -80,7 +100,7 @@
                         <a href="#git2.com">GITHUB SOURCE CODE</a>
                     </div>
                 </div>
-                <div class="project item " >
+                <div class="project" >
                     <img class="projectimg"  src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/000000/external-education-high-school-flatart-icons-flat-flatarticons.png"/>
                     <div class="project-des">
                         <h3>CSSP PORTAL</h3>
@@ -93,39 +113,39 @@
         </div>
     </section>
     
-    <section class="sectionS">
+    <section class="sectionS scrollFade">
         <div class="skills">
             <h2 style="color: azure;text-align: center;"><br><br>LEARNED AND DEVELOPED SKILLS</h2>
             <div class="skills-sec">
                 
                 <div class="s-post">
-                    <img src="https://img.icons8.com/color/240/000000/html-5--v1.png"/>
-                    <div class="s-postview">
+                    <img class="scrollFade" src="https://img.icons8.com/color/240/000000/html-5--v1.png"/>
+                    <div class="s-postview scrollFade">
                         <p>INTERMEDIATE PROGRAMMING IN HTML</p>
                     </div>
                 </div>
-                <div class="s-post "  >
-                    <img src="https://img.icons8.com/color/240/000000/css3.png"/>
-                    <div class="s-postview">
+                <div class="s-post scrollFade"  >
+                    <img class="scrollFade" src="https://img.icons8.com/color/240/000000/css3.png"/>
+                    <div class="s-postview scrollFade">
                         <p>INTERMEDIATE PROGRAMMING IN CSS</p>
                     </div>
                 </div>
-                <div class="s-post " >
-                    <img src="https://img.icons8.com/color/240/000000/python--v1.png"/>
-                    <div class="s-postview">
+                <div class="s-post scrollFade" >
+                    <img class="scrollFade" src="https://img.icons8.com/color/240/000000/python--v1.png"/>
+                    <div class="s-postview scrollFade">
                         <p>INTERMEDIATE PROGRAMMING IN PYTHON</p>
                     </div>
                 </div>
-                <div class="s-post">
-                    <img src="https://img.icons8.com/plasticine/220/000000/oracle-pl-sql--v3.png"/>
-                    <div class="s-postview">
+                <div class="s-post scrollFade">
+                    <img class="scrollFade" src="https://img.icons8.com/plasticine/220/000000/oracle-pl-sql--v3.png"/>
+                    <div class="s-postview scrollFade">
                         <p>INTERMEDIATE PROGRAMMING IN SQL</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="M" >
+    <section id="M" class="scrollFade">
         <div class="contac">
             <form class="frm" name="contact" method="POST" data-netlify="true">
                 <div>
@@ -152,9 +172,13 @@
         </div>
     </section>
    <footer>
-    <p>copyright<img class="social-media" src="https://img.icons8.com/windows/32/000000/copyright.png"/>Simon. Alrights reserved</p>
+    <p class="social-media">copyright (c) Simon. Alrights reserved</p>
     
    </footer>
-   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+   <script src="static/scrollfade.js"></script>
+   <script src="static/personal.js" type="text/javascript"></script>
+    
+   </script>
+   <!-- <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> -->
 </body>
 </html>

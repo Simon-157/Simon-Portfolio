@@ -5,3 +5,62 @@
         transition:  2s;
         transition-timing-function: steps(8);}
         
+/* Setting up animation of div items */
+/* .fadeIn{
+    -moz-animation: fadeIn 2s ease-in;
+    -webkit-animation: fadeIn 2s ease-in;
+    -o-animation: fadeIn 2s ease-in;
+    animation: fadeIn 2s ease-in;
+} */
+
+@-moz-keyframes fadeIn {
+    0%{opacity:1;
+    }
+    50%{
+        box-shadow:4px 4px 4px 4px rgba(0, 0, 0, 5);
+    }
+    100%{
+        background-color: fffgrey;
+    }
+
+}
+@-webkit-keyframes fadeIn {
+    0%{opacity:1;
+    }
+    50%{
+        box-shadow:4px 4px 4px 4px rgba(0, 0, 0, 5);
+    }
+    100%{
+        background-color: lightgreen;
+    }
+
+}
+
+
+@-o-keyframes fadeIn{
+    0%{opacity:1;
+    }
+    50%{
+        box-shadow:4px 4px 4px 4px rgba(0, 0, 0, 5);
+    }
+    100%{
+        background-color: fffgrey;
+    }
+
+}
+
+
+@keyframes fadeIn{
+    0%{opacity:1;
+    }
+    50%{
+        box-shadow:4px 4px 4px 4px rgba(0, 0, 0, 5);
+    }
+    100%{
+        background-color: lightgreen;
+    }
+
+}
+
+
+        
