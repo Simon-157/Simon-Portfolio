@@ -322,6 +322,7 @@ section h1 {
     height: 490px;
     width: 100%;
     background-color: darkslategrey; 
+    
 }
 
 .project-sec{
@@ -330,6 +331,7 @@ section h1 {
     padding: 5rem;
     justify-content:space-between;
     gap:20px;
+    flex-wrap: wrap;
     
 }
 
@@ -341,6 +343,7 @@ section h1 {
     -webkit-animation: fade-in-left 10s both;
     -o-animation: fade-in-left 10s both;
     animation: fade-in-left 10s both;
+    
 	/* flex-grow: 0;
 	flex-shrink: 1; */
 }
@@ -352,7 +355,7 @@ section h1 {
     border-radius: 2rem;
     text-align: left;
     box-shadow: 5px 5px 5px 5px grey;
-    
+    flex-wrap: wrap;
 	/* flex-grow: 0; */
 	
 
