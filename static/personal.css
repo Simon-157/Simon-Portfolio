@@ -49,9 +49,10 @@ html {
 
 
 .nav {
-    background-color: rgb(30,40, 49); 
+    /* background-color: rgb(30,40, 49);  */
     width: 100vw;
-    height:80px;    
+    height:80px;  
+
     animation-duration: 3s;
     position: fixed;
     animation-iteration-count: 3;
@@ -71,17 +72,20 @@ body{
 
 ul { 
     float: right;
-    width:350px;
+    width:100%;
+    
 }
 
 
 li {
     list-style: none;
-    display: inline-flex;
-    justify-content: space-between;
+    display:inline-flex;
+    justify-content: space-around;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-size: 30px;
     padding-left:10px;
+
+  
     
 }
 .navlink {
@@ -142,10 +146,18 @@ a:active{
   }
 
 
+.key{
+    display: inline-flex;
+    justify-content: space-around;
+}
 
+/* #img{
+    float: right;
+} */
 
-header {background-color: azure;
-    color: rgb(12, 22, 22);
+header {
+    /* background-color: azure; */
+    /* color: rgb(12, 22, 22); */
     font-size: 20pt;
     margin-left: 378px auto;
     margin-top: 113.4px;
@@ -154,12 +166,12 @@ header {background-color: azure;
 .home {
     width:100vw;
     height:600px;
-    background-image:url("images/backgroundpicture.jpg");
+    /* background-image:url("images/backgroundpicture.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0%;
     background-color: transparent;
-    color: rgb(192, 203, 224);
+    /* color: rgb(192, 203, 224); */
     font-weight: bolder;
     
     text-align: justify;
@@ -173,7 +185,7 @@ header {background-color: azure;
 
 section h1 {
     line-height: 1.5em;
-    color: rgb(193, 196, 197);
+    /* color: rgb(193, 196, 197); */
 }
 
 
@@ -196,9 +208,9 @@ section h1 {
 
 
 .A-btn{
-    background-color:rgb(30,40, 49);
+    /* background-color:rgb(30,40, 49); */
     border: none;
-    color: white;
+    /* color: white; */
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -212,7 +224,7 @@ section h1 {
     justify-content: flex-end;
 }
 .A-btn a{
-    color: aliceblue;
+    /* color: aliceblue; */
     text-decoration: none;
     
 }
@@ -250,7 +262,7 @@ section h1 {
         animation-name: frontier;}
 }
 .about {
-    background-color: rgb(30,40, 49);
+    /* background-color: rgb(30,40, 49); */
     border: none;
     width:100vw;
     height: 760px;
@@ -275,12 +287,11 @@ section h1 {
      height:70%;
      width:40%;
     float:right;
-
 } */
 
 
 .txt{
-    color:white;
+    /* color:white; */
     width:450px;
     line-height:2rem;
     font-size: 19px;
@@ -313,15 +324,17 @@ section h1 {
     font-size: 16pt;
     float: left;
 } */
-.about h3{color:
-     antiquewhite;text-align: center;
+.about h3{
+    /* color: antiquewhite; */
+     text-align: center; 
      font-size: 20pt;
      font-style: oblique;
     }
 .prj {
     height: 490px;
     width: 100%;
-    background-color: darkslategrey; 
+    /* background-color: darkslategrey;  */
+    
 }
 
 .project-sec{
@@ -330,6 +343,7 @@ section h1 {
     padding: 5rem;
     justify-content:space-between;
     gap:20px;
+    flex-wrap: wrap;
     
 }
 
@@ -341,18 +355,19 @@ section h1 {
     -webkit-animation: fade-in-left 10s both;
     -o-animation: fade-in-left 10s both;
     animation: fade-in-left 10s both;
+    
 	/* flex-grow: 0;
 	flex-shrink: 1; */
 }
 
 .project-sec .project {
-    border:10px solid; border-color: dimgrey;
+    border:10px solid; border-color: rgb(30,40, 49);
     margin: 5rem auto;
     padding: 5px;
     border-radius: 2rem;
     text-align: left;
     box-shadow: 5px 5px 5px 5px grey;
-    
+    flex-wrap: wrap;
 	/* flex-grow: 0; */
 	
 
@@ -382,7 +397,7 @@ section h1 {
 
 
 .project-des {
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 15px;
 }
 .project-des a{font-style: oblique;font-size: 16pt;
@@ -418,7 +433,7 @@ section h1 {
 
 
 .sectionS {
-    background-color: rgb(30,40, 49);
+    /* background-color: rgb(30,40, 49); */
 }
 .skills-sec {
     
@@ -429,7 +444,7 @@ section h1 {
     padding-bottom: 50px;
     padding-top: 20px;
     text-align: center;
-    color: azure;
+    /* color: azure; */
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
 }
@@ -441,12 +456,12 @@ section h1 {
     font-size: 16px;
     
     font-style: oblique;
-    color: blanchedalmond;
+    /* color: blanchedalmond; */
     display: grid;
     grid-auto-flow: row;
     grid-gap: 2rem;
     justify-content: center;
-    background-color: rgb(30,40, 49);
+    /* background-color: rgb(30,40, 49); */
     width:100%;
     /* background-image: url(images/homimg.png); */
     background-repeat:vertical;
@@ -457,7 +472,7 @@ section h1 {
 
 .frm {
     
-    background-color: rgb(30,40, 49);
+    /* background-color: rgb(30,35, 49); */
     border-radius: 0.5rem;
     border-width: 0.5rem;
     width: 30rem;   
@@ -473,12 +488,12 @@ section h1 {
 
 
 .decorate{
-    background-color: rgb(37, 35, 35);
+    /* background-color: rgb(37, 35, 35); */
     width: 30rem;
     padding: 0rem;
     border-radius: 0.5rem;
-    border-color: rgb(32, 31, 31);
-    color: aliceblue;
+    /* border-color: rgb(32, 31, 31); */
+    /* color: aliceblue; */
     font-size: 20px;
 }
 
@@ -490,7 +505,7 @@ section h1 {
 
 
 #sub-btn{
-    background-color:rgb(0, 255, 242);
+    /* background-color:rgb(0, 255, 242); */
     cursor: pointer;
     border-radius: 0.5rem;
     border-style: none;
@@ -538,5 +553,76 @@ footer{
   .scrollFade--animate {
     transition: opacity 1s ease-in;
   }
+
+
+
+/*toggler styling  */
+.hamburger {
+    display: none;
+}
+
+.menuBar {
+    display: block;
+    width: 25px;
+    height: 3px;
+
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    /* background-color: #101010; */
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        /* background-color: #fff; */
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+
+
+/* Dark and Light Mode Set up */
+
+
+
+.light-mode {
+
+    background-color: rgb(30,40, 49) !important;
+    color: #fff !important;
+
+
+}
+
+
+
+
+
+
+
+
 
 

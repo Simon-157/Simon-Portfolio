@@ -16,15 +16,29 @@
 <body>
     
     <div class="nav " ><br>
-        <h2 style="color:antiquewhite;font-size: 32px;">Simon Boateng</h2>
-        <ul id="med-nav scrollFade">
-            <li><a class="navlink" href="#H" >HOME</a></li>
-            <li><a class="navlink" href="#A">ABOUT</a></li>
-            <li><a class="navlink" href="#P">PROJECTS</a></li>
-            <li><a class="navlink" href="#C">CONTACT</a></li>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+        <h2 class="key" style="color:antiquewhite;font-size: 32px;">Simon Boateng</h2>
+        <button 
+            onclick="focusTheme()" 
+            id="img" class="key">
+            <i 
+                class="fa fa-toggle-on" aria-hidden="true">
+            </i>
+        </button>
+        <ul class="nav-menu" id="med-nav scrollFade">
+            <li class="nav-item"><a class="navlink" href="#H" >HOME</a></li>
+            <li class="nav-item"><a class="navlink" href="#A">ABOUT</a></li>
+            <li class="nav-item"><a class="navlink" href="#P">PROJECTS</a></li>
+            <li class="nav-item"><a class="navlink" href="#S">SKILLS</a></li>
+            <li class="nav-item"><a class="navlink" href="#F">FRAMEWORKS</a></li>
+            <li class="nav-item"><a class="navlink" href="#C">CONTACT</a></li>
+            
+            <div class="hamburger">
+              <span class="menuBar"></span>
+              <span class="menuBar"></span>
+              <span class="menuBar"></span>
+              <span class="menuBar"></span>
+            </div>
+
             
         </ul>
         
@@ -108,12 +122,20 @@
                         <a href="https://github.com/Simon-157/CSSP-PORTAL">GITHUB SOURCE CODE</a>
                     </div>
                 </div>
+                <div class="project" >
+                    <img class="projectimg"  src="https://img.icons8.com/ios-filled/50/000000/music-transcript.png"/>
+                    <div class="project-des">
+                        <h3>PIANO KEYBOARD</h3>
+                        <P>A web app that allow users to practice their skills with the piano keyboard</P>
+                        <a href="https://github.com/Simon-157/piano-keyboard">GITHUB SOURCE CODE</a>
+                    </div>
+                </div>
                
             </div>
         </div>
     </section>
     
-    <section class="sectionS scrollFade">
+    <section class="sectionS scrollFade" id="S">
         <div class="skills">
             <h2 style="color: azure;text-align: center;"><br><br>LEARNED AND DEVELOPED SKILLS</h2>
             <div class="skills-sec">
@@ -145,6 +167,40 @@
             </div>
         </div>
     </section>
+
+
+    <section class="sectionS scrollFade" id="F">
+        <div class="skills">
+            <h2 style="color: azure;text-align: center;"><br><br>FRAMEWORKS</h2>
+            <div class="skills-sec">
+                
+                <div class="s-post">
+                    <img class="scrollFade" src="https://img.icons8.com/ios-filled/150/000000/flask.png"/>
+                    <div class="s-postview scrollFade">
+                        <p>PYTHON FLASK</p>      
+                    </div>
+                </div>
+                <div class="s-post scrollFade"  >
+                    <img class="scrollFade" src="https://img.icons8.com/officel/160/000000/react.png"/>
+                    <div class="s-postview scrollFade">
+                        <p>REACT JS</p>
+                    </div>
+                </div>
+                <div class="s-post scrollFade" >
+                    <img class="scrollFade" src="https://img.icons8.com/ios/100/000000/maven-ios.png"/>
+                    <div class="s-postview scrollFade">
+                        <p>PYTHON TKINTER</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
     <section id="M" class="scrollFade">
         <div class="contac">
             <form class="frm" name="contact" method="POST" data-netlify="true">
@@ -177,6 +233,7 @@
    </footer>
    <script src="static/scrollfade.js"></script>
    <script src="static/personal.js" type="text/javascript"></script>
+   <script src="static/theme.js" type="text/javascript"></script>
     
    </script>
    <!-- <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> -->

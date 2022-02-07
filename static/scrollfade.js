@@ -1,5 +1,3 @@
-// ScrollFade 0.1
-
 var fadeElements = document.getElementsByClassName('scrollFade');
 
 function scrollFade() {
@@ -34,3 +32,25 @@ window.addEventListener('resize', scrollFade);
 document.addEventListener('DOMContentLoaded', function() {
     scrollFade();
 });
+
+
+
+
+const hamburger = document.querySelector(".togglerMenu");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
